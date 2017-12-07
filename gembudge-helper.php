@@ -117,6 +117,8 @@ class GembudgeHelper {
         $error = "";
 
         try {
+            $this->fileHandle = fopen($this->filename, 'r+');
+            /*
             if($readOnly) {
                 // Just open the file for reading
                 $this->fileHandle = fopen($this->filename, 'r');
@@ -124,6 +126,7 @@ class GembudgeHelper {
                 // create the file if needed
                 $this->fileHandle = fopen($this->filename, 'w+');
             }
+            */
         } catch(Exception $e) {
             $this->output['test'] = "got here. Exception thrown!";
             $this->fileHandle = null;

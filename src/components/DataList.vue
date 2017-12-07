@@ -11,9 +11,7 @@
     export default {
         components: { DataListItem },
         data() {
-            return {
-                items: [] // todo: how to retrieve data from the server?
-            }
+            return {}
         }
     }
 </script>
